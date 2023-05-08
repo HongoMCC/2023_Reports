@@ -6,12 +6,16 @@
   "type": "Book",
   "conformsTo": "https://github.com/vivliostyle/vivliostyle-cli",
   "author": "HongoMCC",
-  "dateModified": "2023-05-08T08:06:56.598Z",
+  "dateModified": "2023-05-08T08:27:14.101Z",
   "name": "2023_Reports",
   "readingOrder": [
     {
       "url": "manuscript.html",
       "name": "{吾輩|わがはい}は猫である。"
+    },
+    {
+      "url": "451.html",
+      "name": "451 Unavailable for Legal Reasons"
     }
   ],
   "resources": [],
