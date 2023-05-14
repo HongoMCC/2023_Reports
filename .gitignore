@@ -131,3 +131,5 @@ dist
 
 # temp file
 manuscripts/*.html
+
+*.css

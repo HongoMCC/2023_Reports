@@ -1,9 +1,9 @@
 module.exports = {
   title: '2023_Reports', // populated into `publication.json`, default to `title` of the first entry or `name` in `package.json`.
   author: 'HongoMCC', // default to `author` in `package.json` or undefined.
-  // language: 'ja', // default to undefined.
-  // size: 'A4', // paper size.
-  theme: '@vivliostyle/theme-techbook@^0.4.1', // .css or local dir or npm package. default to undefined.
+  language: 'ja', // default to undefined.
+  size: 'A4', // paper size.
+  theme: 'themes/mytheme', // .css or local dir or npm package. default to undefined.
   entry: [
     'manuscript.md', // `title` is automatically guessed from the file (frontmatter > first heading).
     '451.md'

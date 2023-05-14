@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: break-all;
+}
+
+@page {
+  size: 210mm 297mm; /* A4サイズ */
+  margin:15mm 15mm;
+}
+
+h1 {
+  font-weight:normal;
+}
+
+main {
+  column-count:3;
+}
+
+p {
+  font-size:11pt;
+}
