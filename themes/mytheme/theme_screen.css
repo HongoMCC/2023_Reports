@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*
+ * For browser viewing:
+ * load this style in Web publications (format: webpub)
+ */
+/* common styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: break-all;
+  max-height: 290mm;
+}
+
+@page {
+  size: 210mm 297mm; /* A4サイズ */
+}
+header {
+  height: 60mm;
+}
+
+main {
+  column-count: 3;
+  column-rule: 1px dotted #000000;
+}
+
+p {
+  font-size: 11pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h2 {
+  margin: 1px;
+  padding: 1px 20px;
+  text-align: center;
+  font-size: 14pt;
+  background: #cccccc;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+/* for wide screen */
+body {
+  max-height: 800px;
+  margin: 2rem;
+}
+
+/* and more... 🖋 */
+
+/*# sourceMappingURL=theme_screen.css.map */

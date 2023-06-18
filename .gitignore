@@ -130,6 +130,6 @@ dist
 .pnp.*
 
 # temp file
-manuscripts/*.html
+# manuscripts/*.html
 
-*.css
+# *.css
