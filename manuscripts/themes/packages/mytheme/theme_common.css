@@ -9,14 +9,30 @@
 
 @page {
   size: 210mm 297mm; /* A4サイズ */
-}
-header {
-  height: 60mm;
+  margin: 15mm 15mm 20mm 15mm!important;
+  /* padding:none; */
+  overflow: hidden;
 }
 
-main {
-  column-count: 3;
+/* @-epubx-page-template {
+  @import "masterpage_simple.css";
+} */
+
+body {
+  columns: 3;
+  column-gap:20px;
   column-rule: 1px dotted #000000;
+  /* break-inside: avoid; */
+  column-fill:auto;
+  font-family:serif;
+}
+
+header {
+  height: 60mm;
+  /* column-span:all; */
+  float-reference: page;
+  float: top;
+  background:#ffffff;
 }
 
 p {
@@ -25,6 +41,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+  font-family:sans-serif;
 }
 
 h2 {
