@@ -6,7 +6,8 @@ module.exports = {
   theme: 'themes/mytheme', // .css or local dir or npm package. default to undefined.
   entry: [
     'manuscript.md', // `title` is automatically guessed from the file (frontmatter > first heading).
-    '451.md'
+    '451.md',
+    'cellular_automata/garedn_of_eden.md'
     // {
     //   path: 'epigraph.md',
     //   title: 'Epigraph', // title can be overwritten (entry > file),

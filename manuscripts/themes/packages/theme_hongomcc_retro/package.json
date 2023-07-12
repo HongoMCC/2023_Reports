@@ -1,8 +1,8 @@
 {
-  "name": "mytheme",
-  "description": "チュートリアルで使うテーマ",
+  "name": "theme_hongomcc_retro",
+  "description": "for micon_hongo 2023",
   "version": "0.0.1",
-  "author": "Vivliostyle <mail@vivliostyle.org>",
+  "author": "ctes091x",
   "scripts": {
     "build:scss": "sass scss:.",
     "watch:scss": "sass --watch scss:."
@@ -22,7 +22,7 @@
     "vivliostyle",
     "vivliostyle-theme"
   ],
-  "license": "CC0-1.0",
+  "license": "MIT",
   "vivliostyle": {
     "theme": {
       "name": "mytheme",
