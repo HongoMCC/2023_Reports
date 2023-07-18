@@ -1,0 +1,72 @@
+% 2023本郷祭 マイコン部　部誌 「マイコンHONGOMagazine」 TeXテンプレート
+
+% ＝環境設定＝
+
+\documentclass[b5paper,10pt]{jsarticle}
+
+% 数式
+\usepackage{amsmath,amsfonts}
+\usepackage{bm}
+
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+
+% 段組
+\usepackage{multicol}
+\setlength{\columnseprule}{0.5pt}
+
+% 余白
+\usepackage[paper=b5j,truedimen,margin=15truemm]{geometry}
+
+% ページ番号を削除
+\pagestyle{empty}
+
+% ソースコード環境
+\usepackage{listings,jvlisting}
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+
+% 書きたい内容に合わせてお好きなパッケージを導入していただいて構いませんが、外部パッケージは提出時に必ず合わせて提出してください。
+% また、そのパッケージを使用している部分には必ずコメントをしてください。
+
+% ＝環境設定ここまで＝
+
+\begin{document}
+
+% =タイトル=
+\title{記事のタイトル}
+\author{ペンネーム}
+\date{\today}
+\maketitle
+% 初めのページのページ番号を削除(\maketitleの影響を回避)
+\thispagestyle{empty}
+
+% ここではページごとに段組しています。大きく画像を表示したいときなどは以下を　\begin{multicols}{3} 、\end{multicols}のように変更すると文章が終わった直後から空白になります
+\begin{multicols*}{3}
+  
+% 以下本文
+hogefuga
+
+% ソースコードを挿入するときは以下のようにしてください
+\begin{lstlisting}[caption=Sample]
+mes "hello, world!"
+\end{lstlisting}
+
+\end{multicols*}
+\end{document}
