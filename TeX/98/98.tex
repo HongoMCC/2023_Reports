@@ -2,7 +2,7 @@
 
 % ＝環境設定＝
 
-\documentclass[b5paper,10pt]{jsarticle}
+\documentclass[b5paper,9pt]{jsarticle}
 
 % 数式
 \usepackage{amsmath,amsfonts}
@@ -22,7 +22,6 @@
 \pagestyle{empty}
 
 % ソースコード環境
-\usepackage{listings,jvlisting}
 \usepackage{listings,jlisting}
 \lstset{
   basicstyle={\scriptsize\ttfamily},
@@ -52,8 +51,8 @@
 \begin{document}
 
 % =タイトル=
-\title{記事のタイトル}
-\author{ペンネーム}
+\title{PC-9800完全入門}
+\author{H.Taido}
 \date{\today}
 \maketitle
 % 初めのページのページ番号を削除(\maketitleの影響を回避)
@@ -63,11 +62,26 @@
 \begin{multicols*}{3}
   
 % 以下本文
-hogefuga
+\section[short]{ピポッ！}
+皆さんこんにちは。名誉部長のH.Taidoです。
+
 
 % ソースコードを挿入するときは以下のようにしてください
 \begin{lstlisting}[caption=Sample]
-mes "hello, world!"
+  import { Card, Typography, Divider, Tabs, Tab } from "@mui/material";
+  import Marquee from "react-fast-marquee";
+  
+  import ProjectList from "../../../components/ProjectList/container/ProjectList";
+  import { TitleCard } from "../../../components/TitleCard/container/TitleCard";
+  import ProjectHeader from "../../projectdetail/presenter/ProjectHeader";
+  import { useState } from "react";
+  
+  export default function CurrentEvent() {
+    const [place, setPlace] = useState("講堂");
+  
+    const onChangeTab = (event, newValue) => {
+      setPlace(newValue);
+    };
 \end{lstlisting}
 
 \end{multicols*}
