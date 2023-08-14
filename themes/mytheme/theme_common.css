@@ -4,12 +4,12 @@
   padding: 0;
   box-sizing: border-box;
   word-break: break-all;
-  max-height: 290mm;
+  max-height: 257mm;
 }
 
 @page {
-  size: 210mm 297mm; /* A4サイズ */
-  margin: 15mm;
+  size: 182mm 257mm; /* B5サイズ */
+  margin: 12mm!important;
   /* padding:none; */
   overflow: hidden;
 }
@@ -18,54 +18,78 @@
   @import "masterpage_simple.css";
 } */
 
-body {
+/* body {
   columns: 3;
   column-gap:18px;
   column-rule: 1px dotted #000000;
-  /* break-inside: avoid; */
+  /* break-inside: avoid;
   column-fill:auto;
   font-family:serif;
   text-align:justify;
 }
-
+*/
 header {
   height: 55mm;
-  /* column-span:all; */
+  /* column-span:all;
   float-reference: page;
   float: top;
-  background:#ffffff;
+  background:#ffffff; */
+}
+
+main > section {
+  columns:3;
+  column-rule: 1px dotted #000000;
+  text-align:justify;
+  font-family:serif;
+  break-inside:auto;
 }
 
 p {
-  font-size: 11pt;
+  font-size: 7.5pt;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family:sans-serif;
-}
-
-h2 {
-  margin: 1px;
+  margin: 6px 1px;
   padding: 1px 20px;
   text-align: center;
-  font-size: 14pt;
+}
+
+main h1 {
+  column-span:all;
+  float-reference:column;
+  float:inherit-start;
+  font-size: 12pt;
   background: #cccccc;
   color: #000000;
   border: 1px solid #000000;
 }
-/* pre {
+
+main h2 {
+  font-size: 10pt;
+  background: #666666;
+  color: #fefefe;
+  border: 1px solid #000000;
+}
+
+ul, ol {
+  font-size:7.5pt;
+  padding-left: 9px;
+}
+
+/*pre {
   text-align: left;
   white-space:pre-wrap;
   hyphens:manual;
   counter-reset: line;
-}
+} */
 
-code {
+/* code {
   counter-increment: line;
-}
+} */
 
-code::before {
+/* code::before {
   content: counter(line);
   display: inline-block;
   width: 2em;
@@ -73,7 +97,7 @@ code::before {
   text-align: right;
   color: #999;
 } */
-@import 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css';
+/* @import 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css';
 
 code {
   font-size:8pt!important;
@@ -95,7 +119,7 @@ figure[class^='language-'] figcaption {
 
 figure[class^='language-'] pre {
   margin: 0pt;
-}
+} */
 
 
 /*# sourceMappingURL=theme_common.css.map */

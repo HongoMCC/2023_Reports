@@ -15,36 +15,37 @@
       </section>
     </header>
     <main>
-      <section class="level2" aria-labelledby="概要">
-        <h2 id="概要">概要</h2>
+      <section class="level1" aria-labelledby="概要">
+        <h1 id="概要">概要</h1>
         <p>「法的理由により取得不可」を示すHTTPステータスコード。</p>
         <p>国家による検閲が行われたコンテンツ、著作権やプライバシーの侵害、不敬罪、安全保障上脅威となりうる内容、その他違法な内容等にアクセスした際に返される。</p>
       </section>
-      <section class="level2" aria-labelledby="由来">
-        <h2 id="由来">由来</h2>
+      <section class="level1" aria-labelledby="由来">
+        <h1 id="由来">由来</h1>
         <p>「451」という数はレイ・ブラッドベリのディストピア小説『華氏451度』に由来する。</p>
-        <p>『華氏451度』は、本の所持が違法化された世界で、隠匿されていた本を焼却処分する「昇火士(ファイアマン)」のガイ・モンターグの運命が奇妙な少女や本に執着する老婆らとの出会いを通じて大きく変わる様を描いているSF作品である。</p><code></code>
-        <pre><code>HTTP/1.1 451 Unavailable For Legal Reasons
-Link: <https: search.example.net="" legal="">; rel="blocked-by"
-Content-Type: text/htmltext/html
- <title>Unavailable For Legal Reasons</title>
- 
-  <h1>Unavailable For Legal Reasons</h1>
-  <p>This request may not be serviced in the Roman Province
+        <p>『華氏451度』は、本の所持が違法化された世界で、隠匿されていた本を焼却処分する「昇火士(ファイアマン)」のガイ・モンターグの運命が奇妙な少女や本に執着する老婆らとの出会いを通じて大きく変わる様を描いているSF作品である。</p>
+        <pre class="language-html"><code class="language-html">HTTP/1.1 451 Unavailable For Legal Reasons
+Link: &#x3C;https://search.example.net/legal>; rel="blocked-by"
+Content-Type: text/html
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>html</span><span class="token punctuation">></span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>head</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>title</span><span class="token punctuation">></span></span>Unavailable For **Legal** Reasons<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>title</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>head</span><span class="token punctuation">></span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>body</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>h1</span><span class="token punctuation">></span></span>Unavailable For Legal Reasons<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>h1</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>p</span><span class="token punctuation">></span></span>This request may not be serviced in the Roman Province
   of Judea due to the Lex Julia Majestatis, which disallows
   access to resources hosted on servers deemed to be
-  operated by the People's Front of Judea.</p>
- 
-</https:></code>
-</pre>
+  operated by the People's Front of Judea.<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>p</span><span class="token punctuation">></span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>html</span><span class="token punctuation">></span></span></code></pre>
       </section>
-      <section class="level2" aria-labelledby="考察">
-        <h2 id="考察">考察</h2>
+      <section class="level1" aria-labelledby="考察">
+        <h1 id="考察">考察</h1>
         <p>国家による検閲が行われたコンテンツへのアクセスに対しては、検閲を受けたという事実そのものが検閲されることにより、451ではなく単にアクセスが禁止されていることを示す「403 Forbidden」や、その存在を隠す意図をもって「404 Not Found」のコードが返されるということが大いに考えられる。</p>
         <p>この「451 Unavailable for Legal Reasons」のコードの存在からは、国家権力によるインターネットの検閲を絶対に許さないという、本来の意味での「ハッカー」たちの強い想いを感じとることができるであろう。</p>
       </section>
-      <section class="level2" aria-labelledby="参考文献">
-        <h2 id="参考文献">参考文献</h2>
+      <section class="level1" aria-labelledby="参考文献">
+        <h1 id="参考文献">参考文献</h1>
         <ul>
           <li>MDN Web Docs「451 Unavailable For Legal Reasons - HTTP | MDN」<a href="https://developer.mozilla.org/ja/docs/Web/HTTP/Status/451">https://developer.mozilla.org/ja/docs/Web/HTTP/Status/451</a> (2022/08/09閲覧)</li>
           <li>ウィキペディアの執筆者たち「HTTP 451」『フリー百科事典 ウィキペディア日本語版』(2022/08/09閲覧)</li>
