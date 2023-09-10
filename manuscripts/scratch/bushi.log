@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.8.27)  10 SEP 2023 10:39
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.8.27)  10 SEP 2023 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -468,13 +468,13 @@ File: editor.png Graphic file (type bmp)
 ] [2] [3] [4]
 [5] [6]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 397.
+(Font)              scaled to size 8.64899pt on input line 427.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 397.
+(Font)              scaled to size 8.64899pt on input line 427.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 397.
+(Font)              scaled to size 6.72699pt on input line 427.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 397.
+(Font)              scaled to size 6.72699pt on input line 427.
  [7] (./bushi.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
@@ -491,4 +491,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  57i,6n,65p,696b,1296s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bushi.dvi (7 pages, 46204 bytes).
+Output written on bushi.dvi (7 pages, 50896 bytes).
