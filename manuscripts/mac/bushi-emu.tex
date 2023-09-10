@@ -77,12 +77,12 @@
 ミュレーションとは？}
 　エミュレーション、というものを聞いたことがありますか？\\
 恐らく、intelMacを使ってる方やソフト開発関係の仕事をしている方の中には聞いたことある人もいるかもしれません。\\
-この記事においてエミュレーションもしくは仮想化とは、ざっくり言うと「\emph{実在するPC(OS)の上で別の仮想的なPC(OS)を実行する}」\\
+この記事においてエミュレーションもしくは仮想化とは、ざっくり言うと「{実在するPC(OS)の上で別の仮想的なPC(OS)を実行する」\\
 と言う行為を示します。（実は、エミュレートと仮想化は似て非なる別物なのですが、この記事においてそれはあまり重要な情報ではないので同じ、ということにしておきます）\\
 元々「エミュレーション」とは英語の「模倣する・真似をする」と言う意味に由来する「emulate」を語源としているため、極論何かを模倣していればエミュレートしている、と言う扱いになります。\\
 \\
 では、そのエミュレートは具体的にどういう所に役に立つのか、という点に話を移します。\\
-それは,\emph{「実機では実行できない/したくないという作業を実機の代わりにやる」}というものになります。\\
+それは,「実機では実行できない/したくないという作業を実機の代わりにやる」というものになります。\\
 例えば、Macにおいてはexe（一般的なWindowsのアプリケのファイル形式）を開くことは基本的にはできません。\\
 そこで、Macで仮想化ソフトウェアを使用してWindows(OS)を実行することでexeファイルを開く、という使い方です。（こっちの方がライトな使い方）\\
 もう一つの例は、同じmacOSでも、意図的にウイルスに感染させる、などの実機ではやりたくない作業を仮想環境化でやればOSが破壊されようともエミュレータのファイルを消すだけでなかったことにする、という使い方です。\\
@@ -135,7 +135,7 @@ PowerPCの場合はPowerMacG3/G4、m68kの場合はQuadra800がエミュレー�
 ダウンロードしたzipファイルを解凍して中のフォルダを見ると、以下のようになるはずです。\\
 \begin{figure}[H]
   \centering
-  \includegraphics[width=6cm]{2.png}
+  \includegraphics[width=4cm]{2.png}
   \caption{}
 \end{figure}
 まずは、中に入っているqemu.commnadもしくはqemu.batを編集します。\\
@@ -155,46 +155,46 @@ mac版のqemu.commandを参考にして解説します。\\
 
 cd "\$(dirname "\$0")"
 
-./qemu-system-ppc \
--L pc-bios \
--M mac99 \
--display cocoa \
--m 512 \
--boot d \
--drive file=MacOS9.2.iso,format=raw,media=cdrom \
--drive file=MacOS9.2.img,format=raw,media=disk 
+./qemu-system-ppc \ \\
+-L pc-bios \ \\
+-M mac99 \ \\
+-display cocoa \ \\
+-m 512 \ \\
+-boot d \ \\
+-drive file=MacOS9.2.iso,format=raw,media=cdrom \ \\
+-drive file=MacOS9.2.img,format=raw,media=disk \\
 \end{itembox}
 以上のファイルの意味を説明します。\\
 Windowsの場合は￥と読み替えてください。\\
-\begin{itembox}
+\begin{itembox}{script}
 cd "\$(dirname "\$0")"\\
 \end{itembox}
 bashシェルスクリプトであることをmacOSへ宣言します。windowsの場合は代わりにqemu-system-ppc.exe と記述します。\\
-\begin{itembox}
- -L pc-bios
+\begin{itembox}{script}
+-L pc-bios
 \end{itembox}
 使用するbiosのファイルの位置を定義します。\\
-\begin{itembox}
- -M mac99,via=pmu 
+\begin{itembox}{script}
+-M mac99,via=pmu 
 \end{itembox}
 Macのタイプなどを指定します。macc99はPowerMacG4、g3beigeはベージュ色のPowerMacG3をエミュレートします。（g3beigeは滅多に使いませんが、一部使うところもあります。(例えば、Rhapsodyという\it  \sout{闇に葬られた} \sc OSをエミュレートするには-M g3beigeを使う必要があったり...)\\
 via=pmuはマウスとキーボードの接続タイプで、via=pmu-adbやvia=cudaなどのオプションがあります。（滅多に使いませんが）\\
 \textbf{今回は、マウスカーソルが動かないのでvia=pmuの部分は削除してください。}\\
-\begin{itembox}
- -display cocoa 
+\begin{itembox}{script}
+-display cocoa 
 \end{itembox}
 一部サイトでは-display sdlと記述されていますが、最新版ではsdlはサポートされなくなったので、cocoaで実行してください。（MacOSの場合）\\
-\begin{itembox}
- -m 512 
+\begin{itembox}{script}
+-m 512 
 \end{itembox}
 メモリの大きさをMB単位で指定します。2048mb(2GB)以下である必要があります。（PowerMacG4の最大搭載量）\\
-\begin{itembox}
- -boot d
+\begin{itembox}{script}
+-boot d
 \end{itembox}
 起動元を指定します。cに変更するとハードディスクから起動可能です。\\
-\begin{itembox}
- -drive file=MacOS9.2.iso,format=raw,media=cdrom \ \\
- -drive file=MacOS9.2.img,format=raw,media=disk 
+\begin{itembox}{script}
+-drive file=MacOS9.2.iso,format=raw,media=cdrom \ \\
+-drive file=MacOS9.2.img,format=raw,media=disk 
 \end{itembox}
 エミュレートに使うファイルのパスを記述し、デバイスのタイプを指定します。\\
 media欄はcdrom及びdiskが使えます。cdromはCDイメージ（iso,cdr）diskはハードディスクイメージ（img,qcow2,vmdk等）です。\\
@@ -203,8 +203,8 @@ media欄はcdrom及びdiskが使えます。cdromはCDイメージ（iso,cdr）d
 次は、qemu-imgを使用してディスクイメージの作成をします。\\
 cmdもしくはターミナルを開き、qemu-system-ppcのディレクトリまで移動します。\\
 そうしたら、
-\begin{itembox}
-mes"./qemu-img create raw -o size=2G MacOS9.2.img"
+\begin{itembox}{script}
+./qemu-img create raw -o size=2G MacOS9.2.img
 \end{itembox}
 と唱えます。./qemu-imgとはフォルダ直下にある実行ファイルの名称で、createとはqemu-imgの機能の一つです。\\
 createは「ディスクを作成する」というコマンドで、create (フォーマット） -o size=（作成するサイズ） (ディスクファイルの名称）.（拡張子）という形式です。\\
@@ -218,12 +218,17 @@ MacOS9なら2GB、MacOSX10.0~10.3なら8GB、MacOSX10.4/10.5/10.6ベータなら
 では実際にOSのインストールを行います。\\
 \subsection{Windows7}
 以下の画像のようなCDのマークがあり、それを押して仮想ディスクファイルを選択して、仮想マシンに接続します。\\
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=4cm]{3.png}
+  \caption{ここのバーの配置は変更可能です}
+\end{figure}
 そして、起動させます。画像のように起動しなかったらそのディスクはOSのインストールディスクではないか形式が合っていない可能性があります。\\
 起動すれば、お馴染みのWindowsマークが出現し、OSのインストーラが起動します。\\
 「次へ」を押し、「今すぐインストール」を選択し、ライセンスに同意します。\\
 次に、インストールするボリュームの決定に入りますが、実機と同じく非割当の項目を選択します。これは実機のハードディスクではなく、セットアップ時に作成した仮想ディスクなので躊躇なくフォーマットして大丈夫です。\\
 インストールが始まったらしばらくやることがないので待機してましょう。（数回再起動します）\\
-プロダクトキーの入力ですが、Windows7以降はスキップ可能＆後でどうせ有効化するために電話で認証をしなくてはいけないのでスキップで構いません。\\
+プロダクトキーの入力ですが、Windows7以降はスキップ可能\&後でどうせ有効化するために電話で認証をしなくてはいけないのでスキップで構いません。\\
 で、諸々の初期設定を済ませ、デスクトップが写ったらVMwareToolsのインストールを行っていきます。\\
 VmwareToolsとは、ゲストOSの設定をするもので、これを入れるとOSの解像度がいじれるようになったり、ホストOSとファイルのやりとりが簡単に出来るようになる便利ツールです。\\
 メニューバーより、仮想マシン/ 「VMwareTools」よりインストールできます。（仮想マシンにCDドライブが接続されていて、空の場合）\\
@@ -241,23 +246,58 @@ WindowsVista等一部WIndowsでは「この地域では電話でのライセン�
 では、実際にインストールをしましょう。\\
 先程起動する準備は整ったので、qemu.commandをダブルクリックして起動します。\\
 「開発元を検証できないため...」と出たらシステム環境設定の「セキュリティとプライバシー」パネルより「そのまま開く」を選択して起動します。\\
-起動時に以下のように黄色の画面が出たら失敗です。「No invald has state init program.」と表示されたら使用可能なディスクではないということを示しています。\\
+起動時に以下のように黄色の画面が出たら失敗です。「No valid  state has been set by load or init\-program.」と表示されたら使用可能なディスクではないということを示しています。\\
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=4cm]{4.png}
+  \caption{画像は適当なzipファイルを拡張子isoに変更したもの}
+\end{figure}
 起動に成功したら、以下の画像のように表示されます。（MacOSで伝統的なHappyMacです。10.2以降はグレーのリンゴマークが表示されます。）\\
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=4cm]{5.png}
+  \caption{真ん中に出てくるのがHappyMac}
+\end{figure}
 起動したら、以下のようになるので、日本語を選択します。そしたら、メニューバーより「ユーティリティ」から「ディスクユーティリティ」を選択します。\\
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=4cm]{osx-cd.png}
+  \caption{背景はOSにより異なる}
+\end{figure}
 そして、左側のバーよりハードディスクを選択して右下のボタンよりHFS+を選択してフォーマットします。（ディスクユーティリティのUIは\\
 その後はライセンスに同意してインストールを開始します。\\
 その後一回再起動しますが、再度cdから起動するのでシステム終了し、qemu.commandの -boot d の箇所を -boot c　に変更します\\
 そして再度qemu.commandをダブルクリックし、HDから起動し、セットアップをします。\\
 一部の登録系はスキップできるので、「ようこそ」画面でcommand+Qを押すと登録系をスキップできます。\\
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=4cm]{osx-connect.png}
+  \caption{美しい。}
+\end{figure}
 左側に写ってる水面のエフェクトは、クリックすると波が立ちます。（自分でやってみてください）\\
 設定を終えると以下のようにデスクトップ画面が表示されます。お疲れ様でした。\\
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=4cm]{osxdesktop.png}
+  \caption{やはりOSXは美しい。}
+\end{figure}
 \section{余談宣伝}
 今回は簡単めな２種類を例にとって見ていきましたが、勿論一筋縄ではいかないOSもあります。\\
 代表的な例がMacOSX10.4(intel)で、OS側が新しいCPUを認識しなかったり、機種固有のインストーラーしかないので、エミュレートがかなり難しかったりします。\\
-そのような例はここに書き連ねるととても頁が足りないので、https://waltzmaro.blog.jp/よりどうぞ。（宣伝）\\
+そのような例はここに書き連ねるととても頁が足りないので、waltzmaro.blog.jp/ よりどうぞ。（宣伝）\\
 個人的に一番むずいのはRhapsody5.6（現行macOSの前身）だと思います。興味のある方はやってみてください。\\
 最後にRhapsody5.6とMacOSXDP3の画像乗っけて終わります。お疲れ様でした。\\
-
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=6cm]{osx-rhapsody.png}
+  \caption{Rhapsody5.6}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=6cm]{osx-dp3.png}
+  \caption{DP3（Aquaが紹介されたバージョン）}
+\end{figure}
+以上です。\\
 %世界に誇るSAITAMA
 
 % ソースコードを挿入するときは以下のようにしてください
