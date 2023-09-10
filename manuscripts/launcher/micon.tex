@@ -1,0 +1,90 @@
+% 2023本郷祭 マイコン部　部誌 「マイコンHONGOMagazine」 TeXテンプレート
+
+% ＝環境設定＝
+
+\documentclass[b5paper,11pt]{jsarticle}
+
+% 余白
+\usepackage[paper=b5j,truedimen,margin=15truemm]{geometry}
+
+% 数式
+\usepackage{amsmath,amsfonts}
+\usepackage{bm}
+
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+
+% 段組
+\usepackage{multicol}
+\setlength{\columnseprule}{0.5pt}
+
+% ページ番号を削除
+\pagestyle{empty}
+
+% ソースコード環境
+\usepackage{listings,jvlisting}
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+
+% 書きたい内容に合わせてお好きなパッケージを導入していただいて構いませんが、外部パッケージは提出時に必ず合わせて提出してください。
+% また、そのパッケージを使用している部分には必ずコメントをしてください。
+
+% ＝環境設定ここまで＝
+
+\begin{document}
+
+% =タイトル=
+\title{ゲームランチャー作成日記}
+\author{wattz麻呂}
+\date{\today}
+\maketitle
+% 初めのページのページ番号を削除(\maketitleの影響を回避)
+\thispagestyle{empty}
+
+% ここではページごとに段組しています。大きく画像を表示したいときなどは以下を　\begin{multicols}{3} 、\end{multicols}のように変更すると文章が終わった直後から空白になります
+\begin{multicols*}{3}
+  
+% 以下本文
+こんにちは。（マイコン部の挨拶）再びwattz麻呂です。\\
+前回のエミュレーションの話とは打って変わって、文化祭のゲーム詰め合わせCDのランチャーを作った話についてです。\\
+UnityでChatGPTの力を借りながら作成したので、その点だけ注意していただければ幸いです。\\
+\begin{index}{1}
+事の発端
+\end{index}
+\section{事の発端}
+きっかけは8/11、私はモニターマンのポスターを作ろうとしてjamiroquaiのポスター（以下）をパクってポスターの原案をマイコン部のdiscord鯖に出しました。\\
+そしたら、H.Taido氏がPSのジャケット風に改造してくれました。そこで、「ランチャーもPS風にしよう」と言ったらH.Taido氏が「お前が作れ（意訳）」と言ったわけです。（実際電脳部はかなり忙しいらしいです。しらんけど）\\
+丁度私も麻布とのコラボ企画のゲームのためにUnityを触り始めていて、そこで私が請け負うことになりました。\\
+\section{余談1}
+以上の画像はPS1ですが実際できあがったランチャーはPS2のものという件について。\\
+私は昔からゲームコンソールと言えば専らPS2（古い）なのですが、PS1は故障中、PS3は起動したことがないため、一番馴染みのあるPS2でやろうという話になりました。\\
+しかもPS2でやるゲームがPS1のゲームなので、何ら抵抗なくPS2を選びました。（しかも、PS1は背景をパクるが難しそうだったり起動音命な所はある、という点もある）\\
+\section{UIの作成}
+まず、初期状態のランチャーは以下のような感じでした。\\
+この時点で大分PS２らしい感じはありますが、平面っぽくなりすぎていまいちな感じはあります。そこで、ライトを移動して以下のようにしました。\\
+あとは、ライト等をいじって舞台はひとまず完成です。ちなみに、キューブは本家（でPS1のゲームのセーブデータを読み込んだとき）を意識して、スケールを(x,y,z)=(19,19,5)としています。\\
+次に、キューブに画像を貼って
+
+% ソースコードを挿入するときは以下のようにしてください
+\begin{lstlisting}[caption=Sample]
+mes "hello, world!"
+\end{lstlisting}
+
+\end{multicols*}
+\end{document}
