@@ -129,19 +129,20 @@ PowerPCの場合はPowerMacG3/G4、m68kの場合はQuadra800がエミュレー�
 ダウンロードしたzipファイルを解凍して中のフォルダを見ると、以下のようになるはずです。\\
 まずは、中に入っているqemu.commnadもしくはqemu.batを編集します。\\
 権限がない場合は、sudo chmod +x(もしくは777)　（qemu.commandへのパス)とターミナルに入力します。\\
-次に、
-\begin{lstlisting}[caption=Sample]
-xattr -c allow_qemu_to_run.command 
-\end{lstlisting}
-、エラーを吐かなければ
-\begin{lstlistng}[saitama]
-sudo ./allow_qemu_to_run.command
-と唱えます。\\
-sudoコマンドを実行するとパスワードを欲求されます。\\
+%次に、
+%\begin{itembox}
+%xattr \- c allow\_ qemu\_ to\_ run\. command
+%\end{itembox}
+%、エラーを吐かなければ
+%\begin{itembox}
+%sudo ./allow_qemu_to_run.command
+%\end{itembox}
+%と唱えます。\\
+%sudoコマンドを実行するとパスワードを欲求されます。\\
 mac版のqemu.commandを参考にして解説します。\\
 \begin{itembox}{qemu.command}
 
-cd "$(dirname "$0")"
+cd "\$(dirname "\$0")"
 
 ./qemu-system-ppc \
 -L pc-bios \
@@ -153,9 +154,9 @@ cd "$(dirname "$0")"
 -drive file=MacOS9.2.img,format=raw,media=disk 
 \end{itembox}
 以上のファイルの意味を説明します。\\
-Windowsの場合はと読み替えてください。\\
+Windowsの場合は￥と読み替えてください。\\
 \begin{itembox}
-cd "$(dirname "$0")"\\
+cd "\$(dirname "\$0")"\\
 \end{itembox}
 bashシェルスクリプトであることをmacOSへ宣言します。windowsの場合は代わりにqemu-system-ppc.exe と記述します。\\
 \begin{itembox}
@@ -191,9 +192,9 @@ media欄はcdrom及びdiskが使えます。cdromはCDイメージ（iso,cdr）d
 次は、qemu-imgを使用してディスクイメージの作成をします。\\
 cmdもしくはターミナルを開き、qemu-system-ppcのディレクトリまで移動します。\\
 そうしたら、
-\begin{lstlisting}{qemu-img}
+\begin{itembox}
 mes"./qemu-img create raw -o size=2G MacOS9.2.img"
-\end{lstlisting}
+\end{itembox}
 と唱えます。./qemu-imgとはフォルダ直下にある実行ファイルの名称で、createとはqemu-imgの機能の一つです。\\
 createは「ディスクを作成する」というコマンドで、create (フォーマット） -o size=（作成するサイズ） (ディスクファイルの名称）.（拡張子）という形式です。\\
 フォーマットではraw（信頼性が高く、macOSホストならそのままマウントできるが作成するサイズと実際のサイズが同じ容量になる。）、qcow2（qemuの仮想ディスクファイル、ゲストで使った分しか容量を食わない）、vmdk（VMwareFusionで使用される形式）、vdi(VirtualBoxで使用される形式）などが使用できます。\\
@@ -202,14 +203,14 @@ MacOS9なら2GB、MacOSX10.0~10.3なら8GB、MacOSX10.4/10.5/10.6ベータなら
 ファイル名は何でもいいですが、今回はデフォルトのqemu.commandに基づきMacOS9.2.imgとしました。拡張子はフォーマットと揃えた方がいいことのほうが多いので、そこだけ注意しておきましょう。\\
 また、ディスクは一つでなくてはいけないとは限らないので、必要に応じて追加してください。（qemu.commandを変更しなければいけませんが）\\
 これでひとまずは準備完了です。\\
-\section{OSのインストール｝
+\section{OSのインストール}
 では実際にOSのインストールを行います。\\
 \subsection{Windows7}
 以下の画像のようなCDのマークがあり、それを押して仮想ディスクファイルを選択して、仮想マシンに接続します。\\
 そして、起動させます。画像のように起動しなかったらそのディスクはOSのインストールディスクではないか形式が合っていない可能性があります。\\
 起動すれば、お馴染みのWindowsマークが出現し、OSのインストーラが起動します。\\
 「次へ」を押し、「今すぐインストール」を選択し、ライセンスに同意します。\\
-次に、インストールするボリュームの決定に入りますが、実機と同じく非割当の項目を選択します。\bf{これは実機のハードディスクではなく、セットアップ時に作成した仮想ディスクなので躊躇なくフォーマットして大丈夫です。}\\
+次に、インストールするボリュームの決定に入りますが、実機と同じく非割当の項目を選択します。これは実機のハードディスクではなく、セットアップ時に作成した仮想ディスクなので躊躇なくフォーマットして大丈夫です。\\
 インストールが始まったらしばらくやることがないので待機してましょう。（数回再起動します）\\
 プロダクトキーの入力ですが、Windows7以降はスキップ可能＆後でどうせ有効化するために電話で認証をしなくてはいけないのでスキップで構いません。\\
 で、諸々の初期設定を済ませ、デスクトップが写ったらVMwareToolsのインストールを行っていきます。\\
@@ -239,7 +240,7 @@ WindowsVista等一部WIndowsでは「この地域では電話でのライセン�
 一部の登録系はスキップできるので、「ようこそ」画面でcommand+Qを押すと登録系をスキップできます。\\
 左側に写ってる水面のエフェクトは、クリックすると波が立ちます。（自分でやってみてください）\\
 設定を終えると以下のようにデスクトップ画面が表示されます。お疲れ様でした。\\
-\secion{余談・宣伝｝
+\section{余談宣伝}
 今回は簡単めな２種類を例にとって見ていきましたが、勿論一筋縄ではいかないOSもあります。\\
 代表的な例がMacOSX10.4(intel)で、OS側が新しいCPUを認識しなかったり、機種固有のインストーラーしかないので、エミュレートがかなり難しかったりします。\\
 そのような例はここに書き連ねるととても頁が足りないので、https://waltzmaro.blog.jp/よりどうぞ。（宣伝）\\
