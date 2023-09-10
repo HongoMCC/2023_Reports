@@ -2,7 +2,7 @@
 
 % ＝環境設定＝
 
-\documentclass[b5paper,10pt]{jsarticle}
+\documentclass[b5paper,9pt,platex,dvipdfmx]{jsarticle}
 
 % 数式
 \usepackage{amsmath,amsfonts}
@@ -10,6 +10,7 @@
 
 % 画像
 \usepackage[dvipdfmx]{graphicx}
+\usepackage{float}
 
 % 段組
 \usepackage{multicol}
@@ -109,6 +110,11 @@ Windowsならば以下の画像のように出ると思うので、nextを押し
 インストールが終了したら、デスクトップ上にできたショートカット「VMware Workstation Player」をクリックして起動します。\\
 起動したら、ライセンスの認証画面が出ると思うので、「個人向けライセンス」を押すと無料で使えます。（商用利用するためにはライセンス購入が必要）\\
 Macの場合ならdmgファイルがインストールされるので、ダブルクリックでマウントして以下の画像のようなVMware Fusionのアイコンをクリックし、起動すると自動でインストールが完了します。（途中でパスワードの入力を求められるかもしれません）\\
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=5cm]{1.png}
+  \caption{画像は13ですが、個人的には12が非常におすすめです}
+\end{figure}
 こちらの方はライセンスキーが必要なので、VMwareアカウントを作成して無料のライセンスキーを公式サイトより入手します。\\
 以上でインストールは完了です。\\
 次は、VMwareWOrksaionPlayerもしくはVMwareFusionで仮想マシンを作成します。\\
@@ -127,6 +133,11 @@ PowerPCの場合はPowerMacG3/G4、m68kの場合はQuadra800がエミュレー�
 自分でビルドする場合は公式サイトqemu.orgを参考してください。\\
 今回の例ではemaculation.comでビルドされたファイルを使用して行います。\\
 ダウンロードしたzipファイルを解凍して中のフォルダを見ると、以下のようになるはずです。\\
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=6cm]{2.png}
+  \caption{}
+\end{figure}
 まずは、中に入っているqemu.commnadもしくはqemu.batを編集します。\\
 権限がない場合は、sudo chmod +x(もしくは777)　（qemu.commandへのパス)とターミナルに入力します。\\
 %次に、
@@ -231,7 +242,7 @@ WindowsVista等一部WIndowsでは「この地域では電話でのライセン�
 先程起動する準備は整ったので、qemu.commandをダブルクリックして起動します。\\
 「開発元を検証できないため...」と出たらシステム環境設定の「セキュリティとプライバシー」パネルより「そのまま開く」を選択して起動します。\\
 起動時に以下のように黄色の画面が出たら失敗です。「No invald has state init program.」と表示されたら使用可能なディスクではないということを示しています。\\
-起動に成功したら、以下の画像のように表示されます。(MacOSで伝統的なHappyMacです。10.2以降はグレーのリンゴマークが表示されます。）\\
+起動に成功したら、以下の画像のように表示されます。（MacOSで伝統的なHappyMacです。10.2以降はグレーのリンゴマークが表示されます。）\\
 起動したら、以下のようになるので、日本語を選択します。そしたら、メニューバーより「ユーティリティ」から「ディスクユーティリティ」を選択します。\\
 そして、左側のバーよりハードディスクを選択して右下のボタンよりHFS+を選択してフォーマットします。（ディスクユーティリティのUIは\\
 その後はライセンスに同意してインストールを開始します。\\
