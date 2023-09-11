@@ -173,7 +173,8 @@ cd "\$(dirname "\$0")"
 -boot d \ \\
 -drive\ file=MacOS9.2.iso,format\\
 =raw,media=cdrom \ \\
--drive\ file=MacOS9.2.img,format=raw,media=disk \\
+-drive\ file=MacOS9.2.img,format\\
+=raw,media=disk \\
 \end{itembox}
 以上のファイルの意味を説明します。\\
 Windowsの場合は￥と読み替えてください。\\
@@ -188,7 +189,7 @@ bashシェルスクリプトであることをmacOSへ宣言します。windows�
 \begin{itembox}{script}
 -M mac99,via=pmu 
 \end{itembox}
-Macのタイプなどを指定します。macc99はPowerMacG4、g3beigeはベージュ色のPowerMacG3をエミュレートします。（g3beigeは滅多に使いませんが、一部使うところもあります。(例えば、Rhapsodyという\it  \sout{闇に葬られた} \sc OSをエミュレートするには-M g3beigeを使う必要があったり...)\\
+Macのタイプなどを指定します。macc99はPowerMacG4、g3beigeはベージュ色のPowerMacG3をエミュレートします。（g3beigeは滅多に使いませんが、一部使うところもあります。例えば、Rhapsodyという\it  \sout{闇に葬られた} \sc OSをエミュレートするには-M g3beigeを使う必要があったり...）\\
 via=pmuはマウスとキーボードの接続タイプで、via=pmu-adbやvia=cudaなどのオプションがあります。（滅多に使いませんが）\\
 \textbf{今回は、マウスカーソルが動かないのでvia=pmuの部分は削除してください。}\\
 \begin{itembox}{script}
@@ -204,8 +205,10 @@ via=pmuはマウスとキーボードの接続タイプで、via=pmu-adbやvia=c
 \end{itembox}
 起動元を指定します。cに変更するとハードディスクから起動可能です。\\
 \begin{itembox}{script}
--drive file=MacOS9.2.iso,format=raw,media=cdrom \ \\
--drive file=MacOS9.2.img,format=raw,media=disk 
+-drive file=MacOS9.2.iso,format\\
+=raw,media=cdrom \ \\
+-drive file=MacOS9.2.img,format\\
+=raw,media=disk 
 \end{itembox}
 エミュレートに使うファイルのパスを記述し、デバイスのタイプを指定します。\\
 media欄はcdrom及びdiskが使えます。cdromはCDイメージ（iso,cdr）diskはハードディスクイメージ（img,qcow2,vmdk等）です。\\
