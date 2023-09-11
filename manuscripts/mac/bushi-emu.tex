@@ -77,8 +77,8 @@
   
 % 以下本文
 %\it  \sout{テックス完全に理解した} \sc
-こんにちは、中学部長wattz麻呂です。\\
-今回は簡単お手軽にエミュレーションをしてみたいと思います。\\
+$こんにちは、中学部長wattz麻呂です。\\
+今回は簡単お手軽にエミュレーションをしてみたいと思います。\\$
 \begin{itembox}{index}{1}
 エミュレーションとは？\\
 {2}ディスクイメージの準備\\
@@ -167,21 +167,21 @@ mac版のqemu.commandを参考にして解説します。\\
 
 cd "\$(dirname "\$0")"
 
-./qemu-system-ppc \ \\
--L pc-bios \ \\
--M mac99 \ \\
--display cocoa \ \\
--m 512 \ \\
--boot d \ \\
+./qemu-system-ppc　¥ \\
+-L pc-bios ¥ \\
+-M mac99 ¥ \\
+-display cocoa ¥ \\
+-m 512 ¥ \\
+-boot d ¥ \\
 -drive\ file=MacOS9.2.iso,format\\
-=raw,media=cdrom \ \\
+=raw,media=cdrom ¥ \\
 -drive\ file=MacOS9.2.img,format\\
 =raw,media=disk \\
 \end{itembox}
 以上のファイルの意味を説明します。\\
 Windowsの場合は￥と読み替えてください。\\
 \begin{itembox}{script}
-cd "\$(dirname "\$0")"\\
+  cd "\$(dirname "\$0")"\\
 \end{itembox}
 bashシェルスクリプトであることをmacOSへ宣言します。windowsの場合は代わりにqemu-system-ppc.exe と記述します。\\
 \begin{itembox}{script}
@@ -191,7 +191,7 @@ bashシェルスクリプトであることをmacOSへ宣言します。windows�
 \begin{itembox}{script}
 -M mac99,via=pmu 
 \end{itembox}
-Macのタイプなどを指定します。macc99はPowerMacG4、g3beigeはベージュ色のPowerMacG3をエミュレートします。（g3beigeは滅多に使いませんが、一部使うところもあります。例えば、Rhapsodyという\it  \sout{闇に葬られた} \sc OSをエミュレートするには-M g3beigeを使う必要があったり...）\\
+Macのタイプなどを指定します。mac99はPowerMacG4、g3beigeはベージュ色のPowerMacG3をエミュレートします。（g3beigeは滅多に使いませんが、一部使うところもあります。例えば、Rhapsodyという\sout{闇に葬られた}OSをエミュレートするには-M g3beigeを使う必要があったり...）\\
 via=pmuはマウスとキーボードの接続タイプで、via=pmu-adbやvia=cudaなどのオプションがあります。（滅多に使いませんが）\\
 \textbf{今回は、マウスカーソルが動かないのでvia=pmuの部分は削除してください。}\\
 \begin{itembox}{script}
@@ -302,7 +302,7 @@ WindowsVista等一部WIndowsでは「この地域では電話でのライセン�
 代表的な例がMacOSX10.4(intel)で、OS側が新しいCPUを認識しなかったり、機種固有のインストーラーしかないので、エミュレートがかなり難しかったりします。\\
 そのような例はここに書き連ねるととても頁が足りないので、waltzmaro.blog.jp/ よりどうぞ。（宣伝）\\
 個人的に一番むずいのはRhapsody5.6（現行macOSの前身）だと思います。興味のある方はやってみてください。\\
-あと私事ですが、今回初めて\sout{テックス}\TeX を使用してみました。実に\sout{クソ}興味深かったので、皆さんもやってみてください。\\
+あと私事ですが、今回初めて\sout{テックス}\TeX を使用してみました。実に\sout{クソ}興味深かったので、これからもこれを使おうと思います\sout{大嘘}。\\
 最後にRhapsody5.6とMacOSXDP3の画像乗っけて終わります。お疲れ様でした。\\
 \begin{figure}[H]
   \centering
