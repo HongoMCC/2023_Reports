@@ -167,19 +167,19 @@ mac版のqemu.commandを参考にして解説します。\\
 
 cd "\$(dirname "\$0")"
 
-./qemu-system-ppc　¥ \\
--L pc-bios ¥ \\
--M mac99 ¥ \\
--display cocoa ¥ \\
--m 512 ¥ \\
--boot d ¥ \\
+./qemu-system-ppc　\verb|\| \\
+-L pc-bios \verb|\| \\
+-M mac99 \verb|\| \\
+-display cocoa \verb|\| \\
+-m 512 \verb|\| \\
+-boot d \verb|\| \\
 -drive\ file=MacOS9.2.iso,format\\
-=raw,media=cdrom ¥ \\
+=raw,media=cdrom \verb|\| \\
 -drive\ file=MacOS9.2.img,format\\
 =raw,media=disk \\
 \end{itembox}
 以上のファイルの意味を説明します。\\
-Windowsの場合は￥と読み替えてください。\\
+Windowsの場合は\verb|\|を￥と読み替えてください。\\
 \begin{itembox}{script}
   cd "\$(dirname "\$0")"\\
 \end{itembox}
