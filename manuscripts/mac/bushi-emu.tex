@@ -121,12 +121,12 @@ x86系統のWIndowsであれば、基本的にはこのやり方で動作する�
 Windowsならば以下の画像のように出ると思うので、nextを押して、その後は脳死で「はい」をクリックしまくるとインストールが終了します。\\
 インストールが終了したら、デスクトップ上にできたショートカット「VMware Workstation Player」をクリックして起動します。\\
 起動したら、ライセンスの認証画面が出ると思うので、「個人向けライセンス」を押すと無料で使えます。（商用利用するためにはライセンス購入が必要）\\
-Macの場合ならdmgファイルがインストールされるので、ダブルクリックでマウントして以下の画像のようなVMware Fusionのアイコンをクリックし、起動すると自動でインストールが完了します。（途中でパスワードの入力を求められるかもしれません）\\
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=5cm]{1.png}
-  \caption{画像は13ですが、個人的には12が非常におすすめです}
-\end{figure}
+Macの場合ならdmgファイルがインストールされるので、ダブルクリックでマウントしてVMware Fusionのアイコンをクリックし、起動すると自動でインストールが完了します。（途中でパスワードの入力を求められるかもしれません）\\
+%\begin{figure}[H]
+ % \centering
+  %\includegraphics[width=5cm]{1.png}
+  %\caption{画像は13ですが、個人的には12が非常におすすめです}
+%\end{figure}
 こちらの方はライセンスキーが必要なので、VMwareアカウントを作成して無料のライセンスキーを公式サイトより入手します。\\
 以上でインストールは完了です。\\
 次は、VMwareWOrksaionPlayerもしくはVMwareFusionで仮想マシンを作成します。\\
@@ -241,6 +241,11 @@ MacOS9なら2GB、MacOSX10.0~10.3なら8GB、MacOSX10.4/10.5/10.6ベータなら
 \end{figure}
 そして、起動させます。画像のように起動しなかったらそのディスクはOSのインストールディスクではないか形式が合っていない可能性があります。\\
 起動すれば、お馴染みのWindowsマークが出現し、OSのインストーラが起動します。\\
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=4cm]{win7-cd.png}
+  \caption{windows7の画面}
+\end{figure}
 「次へ」を押し、「今すぐインストール」を選択し、ライセンスに同意します。\\
 次に、インストールするボリュームの決定に入りますが、実機と同じく非割当の項目を選択します。これは実機のハードディスクではなく、セットアップ時に作成した仮想ディスクなので躊躇なくフォーマットして大丈夫です。\\
 インストールが始まったらしばらくやることがないので待機してましょう。（数回再起動します）\\
@@ -266,7 +271,7 @@ WindowsVista等一部WIndowsでは「この地域では電話でのライセン�
 \begin{figure}[H]
   \centering
   \includegraphics[width=4cm]{4.png}
-  \caption{画像は適当なzipファイルを拡張子isoに変更したもの}
+  \caption{}
 \end{figure}
 起動に成功したら、以下の画像のように表示されます。（MacOSで伝統的なHappyMacです。10.2以降はグレーのリンゴマークが表示されます。）\\
 \begin{figure}[H]
@@ -295,7 +300,7 @@ WindowsVista等一部WIndowsでは「この地域では電話でのライセン�
 \begin{figure}[H]
   \centering
   \includegraphics[width=4cm]{osxdesktop.png}
-  \caption{やはりOSXは美しい。}
+  \caption{やはりMacOSXは美しい。}
 \end{figure}
 \section{余談宣伝}
 今回は簡単めな２種類を例にとって見ていきましたが、勿論一筋縄ではいかないOSもあります。\\
