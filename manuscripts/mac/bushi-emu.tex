@@ -14,7 +14,7 @@
 
 % 段組
 \usepackage{multicol}
-\setlength{\columnseprule}{0.5pt}
+\setlength{\columnseprule}{0.3pt}
 
 % 余白
 \usepackage[paper=b5j,truedimen,margin=15truemm,dvipdfmx]{geometry}
@@ -76,12 +76,15 @@
 \begin{multicols*}{3}
   
 % 以下本文
-\it  \sout{テックス完全に理解した} \sc
-こんにちは、中学部長wattz麻呂です。\\
-今回は簡単お手軽にエミュレーションをしてみたいと思います。\\
+%\it  \sout{テックス完全に理解した} \sc
+$こんにちは、中学部長wattz麻呂です。\\
+今回は簡単お手軽にエミュレーションをしてみたいと思います。\\$
 \begin{itembox}{index}{1}
-エミュレーションとは？
-{2}ディスクイメージの準備
+エミュレーションとは？\\
+{2}ディスクイメージの準備\\
+{3}エミュレータのインストール\\
+{4}OSのインストール\\
+{5}余談宣伝
 \end{itembox}
 \section{エ
 ミュレーションとは？}
@@ -90,7 +93,6 @@
 この記事においてエミュレーションもしくは仮想化とは、ざっくり言うと「実在するPC(OS)の上で別の仮想的なPC(OS)を実行する」\\
 と言う行為を示します。（実は、エミュレートと仮想化は似て非なる別物なのですが、この記事においてそれはあまり重要な情報ではないので同じ、ということにしておきます）\\
 元々「エミュレーション」とは英語の「模倣する・真似をする」と言う意味に由来する「emulate」を語源としているため、極論何かを模倣していればエミュレートしている、と言う扱いになります。\\
-\\
 では、そのエミュレートは具体的にどういう所に役に立つのか、という点に話を移します。\\
 それは,「実機では実行できない/したくないという作業を実機の代わりにやる」というものになります。\\
 例えば、Macにおいてはexe（一般的なWindowsのアプリケのファイル形式）を開くことは基本的にはできません。\\
@@ -114,17 +116,17 @@ iso（ディスクユーティリティを使用する場合はcdr）ファイ�
 今回はx86ベースで動作するOSの例として、Windows7を採用してみました。\\
 x86系統のWIndowsであれば、基本的にはこのやり方で動作すると思います。（Win98以前のOSはインストールにMS-DOSが必要)\\
 ではまず、Windowsの場合は「VMware Workstation Player」を、Macの場合は「VMware Fusion」を公式サイトの指示通りにダウンロードしてください。\\
-スペック的に無理な場合はVirtualBoxでも大丈夫ですが、低速だったり色々不便なのでVMware製品の方を推奨します。\\
+%スペック的に無理な場合はVirtualBoxでも大丈夫ですが、低速だったり色々不便なのでVMware製品の方を推奨します。\\
 ダウンロードが済んだらインストーラーを起動します。\\
 Windowsならば以下の画像のように出ると思うので、nextを押して、その後は脳死で「はい」をクリックしまくるとインストールが終了します。\\
 インストールが終了したら、デスクトップ上にできたショートカット「VMware Workstation Player」をクリックして起動します。\\
 起動したら、ライセンスの認証画面が出ると思うので、「個人向けライセンス」を押すと無料で使えます。（商用利用するためにはライセンス購入が必要）\\
-Macの場合ならdmgファイルがインストールされるので、ダブルクリックでマウントして以下の画像のようなVMware Fusionのアイコンをクリックし、起動すると自動でインストールが完了します。（途中でパスワードの入力を求められるかもしれません）\\
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=5cm]{1.png}
-  \caption{画像は13ですが、個人的には12が非常におすすめです}
-\end{figure}
+Macの場合ならdmgファイルがインストールされるので、ダブルクリックでマウントしてVMware Fusionのアイコンをクリックし、起動すると自動でインストールが完了します。（途中でパスワードの入力を求められるかもしれません）\\
+%\begin{figure}[H]
+ % \centering
+  %\includegraphics[width=5cm]{1.png}
+  %\caption{画像は13ですが、個人的には12が非常におすすめです}
+%\end{figure}
 こちらの方はライセンスキーが必要なので、VMwareアカウントを作成して無料のライセンスキーを公式サイトより入手します。\\
 以上でインストールは完了です。\\
 次は、VMwareWOrksaionPlayerもしくはVMwareFusionで仮想マシンを作成します。\\
@@ -165,21 +167,21 @@ mac版のqemu.commandを参考にして解説します。\\
 
 cd "\$(dirname "\$0")"
 
-./qemu-system-ppc \ \\
--L pc-bios \ \\
--M mac99 \ \\
--display cocoa \ \\
--m 512 \ \\
--boot d \ \\
+./qemu-system-ppc　\verb|\| \\
+-L pc-bios \verb|\| \\
+-M mac99 \verb|\| \\
+-display cocoa \verb|\| \\
+-m 512 \verb|\| \\
+-boot d \verb|\| \\
 -drive\ file=MacOS9.2.iso,format\\
-=raw,media=cdrom \ \\
+=raw,media=cdrom \verb|\| \\
 -drive\ file=MacOS9.2.img,format\\
 =raw,media=disk \\
 \end{itembox}
 以上のファイルの意味を説明します。\\
-Windowsの場合は￥と読み替えてください。\\
+Windowsの場合は\verb|\|を￥と読み替えてください。\\
 \begin{itembox}{script}
-cd "\$(dirname "\$0")"\\
+  cd "\$(dirname "\$0")"\\
 \end{itembox}
 bashシェルスクリプトであることをmacOSへ宣言します。windowsの場合は代わりにqemu-system-ppc.exe と記述します。\\
 \begin{itembox}{script}
@@ -189,7 +191,7 @@ bashシェルスクリプトであることをmacOSへ宣言します。windows�
 \begin{itembox}{script}
 -M mac99,via=pmu 
 \end{itembox}
-Macのタイプなどを指定します。macc99はPowerMacG4、g3beigeはベージュ色のPowerMacG3をエミュレートします。（g3beigeは滅多に使いませんが、一部使うところもあります。例えば、Rhapsodyという\it  \sout{闇に葬られた} \sc OSをエミュレートするには-M g3beigeを使う必要があったり...）\\
+Macのタイプなどを指定します。mac99はPowerMacG4、g3beigeはベージュ色のPowerMacG3をエミュレートします。（g3beigeは滅多に使いませんが、一部使うところもあります。例えば、Rhapsodyという\sout{闇に葬られた}OSをエミュレートするには-M g3beigeを使う必要があったり...）\\
 via=pmuはマウスとキーボードの接続タイプで、via=pmu-adbやvia=cudaなどのオプションがあります。（滅多に使いませんが）\\
 \textbf{今回は、マウスカーソルが動かないのでvia=pmuの部分は削除してください。}\\
 \begin{itembox}{script}
@@ -239,6 +241,11 @@ MacOS9なら2GB、MacOSX10.0~10.3なら8GB、MacOSX10.4/10.5/10.6ベータなら
 \end{figure}
 そして、起動させます。画像のように起動しなかったらそのディスクはOSのインストールディスクではないか形式が合っていない可能性があります。\\
 起動すれば、お馴染みのWindowsマークが出現し、OSのインストーラが起動します。\\
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=4cm]{win7-cd.png}
+  \caption{windows7の画面}
+\end{figure}
 「次へ」を押し、「今すぐインストール」を選択し、ライセンスに同意します。\\
 次に、インストールするボリュームの決定に入りますが、実機と同じく非割当の項目を選択します。これは実機のハードディスクではなく、セットアップ時に作成した仮想ディスクなので躊躇なくフォーマットして大丈夫です。\\
 インストールが始まったらしばらくやることがないので待機してましょう。（数回再起動します）\\
@@ -264,7 +271,7 @@ WindowsVista等一部WIndowsでは「この地域では電話でのライセン�
 \begin{figure}[H]
   \centering
   \includegraphics[width=4cm]{4.png}
-  \caption{画像は適当なzipファイルを拡張子isoに変更したもの}
+  \caption{}
 \end{figure}
 起動に成功したら、以下の画像のように表示されます。（MacOSで伝統的なHappyMacです。10.2以降はグレーのリンゴマークが表示されます。）\\
 \begin{figure}[H]
@@ -293,13 +300,14 @@ WindowsVista等一部WIndowsでは「この地域では電話でのライセン�
 \begin{figure}[H]
   \centering
   \includegraphics[width=4cm]{osxdesktop.png}
-  \caption{やはりOSXは美しい。}
+  \caption{やはりMacOSXは美しい。}
 \end{figure}
 \section{余談宣伝}
 今回は簡単めな２種類を例にとって見ていきましたが、勿論一筋縄ではいかないOSもあります。\\
 代表的な例がMacOSX10.4(intel)で、OS側が新しいCPUを認識しなかったり、機種固有のインストーラーしかないので、エミュレートがかなり難しかったりします。\\
 そのような例はここに書き連ねるととても頁が足りないので、waltzmaro.blog.jp/ よりどうぞ。（宣伝）\\
 個人的に一番むずいのはRhapsody5.6（現行macOSの前身）だと思います。興味のある方はやってみてください。\\
+あと私事ですが、今回初めて\sout{テックス}\TeX を使用してみました。実に\sout{クソ}興味深かったので、これからもこれを使おうと思います\sout{大嘘}。\\
 最後にRhapsody5.6とMacOSXDP3の画像乗っけて終わります。お疲れ様でした。\\
 \begin{figure}[H]
   \centering
