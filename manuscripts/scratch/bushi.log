@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.8.27)  10 SEP 2023 11:45
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.8.27)  15 SEP 2023 08:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -442,40 +442,234 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 5.76599pt on input line 63.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 78.
+(Font)              scaled to size 6.72699pt on input line 86.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 78.
+(Font)              scaled to size 4.805pt on input line 86.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 78.
+(Font)              scaled to size 9.60999pt on input line 86.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 78.
+(Font)              scaled to size 6.72699pt on input line 86.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 78.
+(Font)              scaled to size 4.805pt on input line 86.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 80.
+(Font)              scaled to size 13.83836pt on input line 88.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 80.
+(Font)              scaled to size 13.83836pt on input line 88.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 80.
+(Font)              scaled to size 13.83836pt on input line 88.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 80.
+(Font)              scaled to size 13.83836pt on input line 88.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 81.
+(Font)              scaled to size 11.53198pt on input line 89.
 File: editor.png Graphic file (type bmp)
 <editor.png>
  [1
 
-] [2] [3] [4]
-[5] [6]
+] [2]
+File: images/motion_1.png Graphic file (type bmp)
+<images/motion_1.png>
+File: images/motion_2.png Graphic file (type bmp)
+<images/motion_2.png>
+File: images/motion_3.png Graphic file (type bmp)
+<images/motion_3.png>
+File: images/motion_4.png Graphic file (type bmp)
+<images/motion_4.png>
+File: images/motion_5.png Graphic file (type bmp)
+<images/motion_5.png>
+File: images/motion_6.png Graphic file (type bmp)
+<images/motion_6.png>
+File: images/motion_7.png Graphic file (type bmp)
+<images/motion_7.png>
+File: images/motion_8.png Graphic file (type bmp)
+<images/motion_8.png>
+File: images/motion_9.png Graphic file (type bmp)
+<images/motion_9.png>
+File: images/motion_10.png Graphic file (type bmp)
+<images/motion_10.png>
+File: images/motion_11.png Graphic file (type bmp)
+<images/motion_11.png>
+File: images/motion_12.png Graphic file (type bmp)
+<images/motion_12.png>
+File: images/motion_13.png Graphic file (type bmp)
+<images/motion_13.png>
+File: images/motion_14.png Graphic file (type bmp)
+<images/motion_14.png>
+File: images/motion_15.png Graphic file (type bmp)
+<images/motion_15.png>
+ [3]
+File: images/motion_16.png Graphic file (type bmp)
+<images/motion_16.png>
+File: images/motion_17.png Graphic file (type bmp)
+<images/motion_17.png>
+File: images/motion_18.png Graphic file (type bmp)
+<images/motion_18.png>
+File: images/looks_1.png Graphic file (type bmp)
+<images/looks_1.png>
+File: images/looks_2.png Graphic file (type bmp)
+<images/looks_2.png>
+File: images/looks_3.png Graphic file (type bmp)
+<images/looks_3.png>
+File: images/looks_4.png Graphic file (type bmp)
+<images/looks_4.png>
+File: images/looks_5.png Graphic file (type bmp)
+<images/looks_5.png>
+File: images/looks_6.png Graphic file (type bmp)
+<images/looks_6.png>
+File: images/looks_7.png Graphic file (type bmp)
+<images/looks_7.png>
+File: images/looks_8.png Graphic file (type bmp)
+<images/looks_8.png>
+File: images/looks_9.png Graphic file (type bmp)
+<images/looks_9.png>
+File: images/looks_10.png Graphic file (type bmp)
+<images/looks_10.png>
+File: images/looks_11.png Graphic file (type bmp)
+<images/looks_11.png>
+File: images/looks_12.png Graphic file (type bmp)
+<images/looks_12.png>
+File: images/looks_13.png Graphic file (type bmp)
+<images/looks_13.png>
+ [4]
+File: images/looks_14.png Graphic file (type bmp)
+<images/looks_14.png>
+File: images/looks_15.png Graphic file (type bmp)
+<images/looks_15.png>
+File: images/looks_16.png Graphic file (type bmp)
+<images/looks_16.png>
+File: images/looks_17.png Graphic file (type bmp)
+<images/looks_17.png>
+File: images/looks_18.png Graphic file (type bmp)
+<images/looks_18.png>
+File: images/looks_19.png Graphic file (type bmp)
+<images/looks_19.png>
+File: images/looks_20.png Graphic file (type bmp)
+<images/looks_20.png>
+File: images/sound_1.png Graphic file (type bmp)
+<images/sound_1.png>
+File: images/sound_2.png Graphic file (type bmp)
+<images/sound_2.png>
+File: images/sound_3.png Graphic file (type bmp)
+<images/sound_3.png>
+File: images/sound_4.png Graphic file (type bmp)
+<images/sound_4.png>
+File: images/sound_5.png Graphic file (type bmp)
+<images/sound_5.png>
+File: images/sound_6.png Graphic file (type bmp)
+<images/sound_6.png>
+File: images/sound_7.png Graphic file (type bmp)
+<images/sound_7.png>
+File: images/sound_8.png Graphic file (type bmp)
+<images/sound_8.png>
+
+[5]
+File: images/sound_9.png Graphic file (type bmp)
+<images/sound_9.png>
+File: images/events_1.png Graphic file (type bmp)
+<images/events_1.png>
+File: images/events_2.png Graphic file (type bmp)
+<images/events_2.png>
+File: images/events_3.png Graphic file (type bmp)
+<images/events_3.png>
+File: images/events_4.png Graphic file (type bmp)
+<images/events_4.png>
+File: images/events_5.png Graphic file (type bmp)
+<images/events_5.png>
+File: images/events_6.png Graphic file (type bmp)
+<images/events_6.png>
+File: images/events_7.png Graphic file (type bmp)
+<images/events_7.png>
+File: images/events_8.png Graphic file (type bmp)
+<images/events_8.png>
+ [6]
+File: images/control_1.png Graphic file (type bmp)
+<images/control_1.png>
+File: images/control_2.png Graphic file (type bmp)
+<images/control_2.png>
+File: images/control_3.png Graphic file (type bmp)
+<images/control_3.png>
+File: images/control_4.png Graphic file (type bmp)
+<images/control_4.png>
+File: images/control_5.png Graphic file (type bmp)
+<images/control_5.png>
+File: images/control_6.png Graphic file (type bmp)
+<images/control_6.png>
+File: images/control_7.png Graphic file (type bmp)
+<images/control_7.png>
+File: images/control_8.png Graphic file (type bmp)
+<images/control_8.png>
+File: images/control_9.png Graphic file (type bmp)
+<images/control_9.png>
+ [7]
+File: images/control_10.png Graphic file (type bmp)
+<images/control_10.png>
+File: images/control_11.png Graphic file (type bmp)
+<images/control_11.png>
+File: images/sensing_1.png Graphic file (type bmp)
+<images/sensing_1.png>
+File: images/sensing_2.png Graphic file (type bmp)
+<images/sensing_2.png>
+File: images/sensing_3.png Graphic file (type bmp)
+<images/sensing_3.png>
+File: images/sensing_4.png Graphic file (type bmp)
+<images/sensing_4.png>
+File: images/sensing_5.png Graphic file (type bmp)
+<images/sensing_5.png>
+File: images/sensing_6.png Graphic file (type bmp)
+<images/sensing_6.png>
+File: images/sensing_7.png Graphic file (type bmp)
+<images/sensing_7.png>
+File: images/sensing_8.png Graphic file (type bmp)
+<images/sensing_8.png>
+File: images/sensing_9.png Graphic file (type bmp)
+<images/sensing_9.png>
+File: images/sensing_10.png Graphic file (type bmp)
+<images/sensing_10.png>
+ [8]
+File: images/sensing_11.png Graphic file (type bmp)
+<images/sensing_11.png>
+File: images/sensing_12.png Graphic file (type bmp)
+<images/sensing_12.png>
+File: images/sensing_13.png Graphic file (type bmp)
+<images/sensing_13.png>
+File: images/sensing_14.png Graphic file (type bmp)
+<images/sensing_14.png>
+File: images/sensing_15.png Graphic file (type bmp)
+<images/sensing_15.png>
+File: images/sensing_16.png Graphic file (type bmp)
+<images/sensing_16.png>
+File: images/sensing_17.png Graphic file (type bmp)
+<images/sensing_17.png>
+File: images/sensing_18.png Graphic file (type bmp)
+<images/sensing_18.png>
+ [9] [10] [11] [12] [13]
+File: images/teigi_2.png Graphic file (type bmp)
+<images/teigi_2.png>
+
+Overfull \hbox (1.97955pt too wide) in paragraph at lines 724--725
+[][] 
+ []
+
+File: images/teigi_1.png Graphic file (type bmp)
+<images/teigi_1.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 725--730
+[][]\OT1/cmr/m/n/10 (\JY1/mc/m/n/10 見
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 732
+[]$[]$[]
+ []
+
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 427.
+(Font)              scaled to size 8.64899pt on input line 738.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 427.
+(Font)              scaled to size 8.64899pt on input line 738.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 427.
+(Font)              scaled to size 6.72699pt on input line 738.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 427.
- [7] (./bushi.aux)
+(Font)              scaled to size 6.72699pt on input line 738.
+[14] (./bushi.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-06-01> patch level 1
@@ -483,12 +677,12 @@ L3 programming layer <2023-08-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4814 strings out of 475846
- 69057 string characters out of 5782113
- 1944084 words of memory out of 5000000
- 26047 multiletter control sequences out of 15000+600000
+ 5332 strings out of 475846
+ 81742 string characters out of 5782113
+ 1939084 words of memory out of 5000000
+ 26477 multiletter control sequences out of 15000+600000
  579052 words of font info for 131 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 57i,6n,65p,696b,1296s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,809b,1296s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bushi.dvi (7 pages, 50896 bytes).
+Output written on bushi.dvi (14 pages, 100812 bytes).
