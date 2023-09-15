@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.8.27)  15 SEP 2023 08:31
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.8.27)  15 SEP 2023 17:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -641,35 +641,89 @@ File: images/sensing_17.png Graphic file (type bmp)
 <images/sensing_17.png>
 File: images/sensing_18.png Graphic file (type bmp)
 <images/sensing_18.png>
- [9] [10] [11] [12] [13]
-File: images/teigi_2.png Graphic file (type bmp)
-<images/teigi_2.png>
-
-Overfull \hbox (1.97955pt too wide) in paragraph at lines 724--725
-[][] 
- []
-
+File: images/operators_1.png Graphic file (type bmp)
+<images/operators_1.png>
+File: images/operators_2.png Graphic file (type bmp)
+<images/operators_2.png>
+File: images/operators_3.png Graphic file (type bmp)
+<images/operators_3.png>
+File: images/operators_4.png Graphic file (type bmp)
+<images/operators_4.png>
+File: images/operators_5.png Graphic file (type bmp)
+<images/operators_5.png>
+File: images/operators_6.png Graphic file (type bmp)
+<images/operators_6.png>
+File: images/operators_7.png Graphic file (type bmp)
+<images/operators_7.png>
+ [9]
+File: images/operators_8.png Graphic file (type bmp)
+<images/operators_8.png>
+File: images/operators_9.png Graphic file (type bmp)
+<images/operators_9.png>
+File: images/operators_10.png Graphic file (type bmp)
+<images/operators_10.png>
+File: images/operators_11.png Graphic file (type bmp)
+<images/operators_11.png>
+File: images/operators_12.png Graphic file (type bmp)
+<images/operators_12.png>
+File: images/operators_13.png Graphic file (type bmp)
+<images/operators_13.png>
+File: images/operators_14.png Graphic file (type bmp)
+<images/operators_14.png>
+File: images/operators_15.png Graphic file (type bmp)
+<images/operators_15.png>
+File: images/operators_16.png Graphic file (type bmp)
+<images/operators_16.png>
+File: images/operators_17.png Graphic file (type bmp)
+<images/operators_17.png>
+File: images/operators_18.png Graphic file (type bmp)
+<images/operators_18.png>
+ [10]
+File: images/variables_1.png Graphic file (type bmp)
+<images/variables_1.png>
+File: images/variables_2.png Graphic file (type bmp)
+<images/variables_2.png>
+File: images/variables_3.png Graphic file (type bmp)
+<images/variables_3.png>
+File: images/variables_4.png Graphic file (type bmp)
+<images/variables_4.png>
+File: images/variables_5.png Graphic file (type bmp)
+<images/variables_5.png>
+ [11] [12]
+File: images/lists_1.png Graphic file (type bmp)
+<images/lists_1.png>
+File: images/lists_2.png Graphic file (type bmp)
+<images/lists_2.png>
+File: images/lists_3.png Graphic file (type bmp)
+<images/lists_3.png>
+File: images/lists_4.png Graphic file (type bmp)
+<images/lists_4.png>
+File: images/lists_5.png Graphic file (type bmp)
+<images/lists_5.png>
+File: images/lists_6.png Graphic file (type bmp)
+<images/lists_6.png>
+File: images/lists_7.png Graphic file (type bmp)
+<images/lists_7.png>
+File: images/lists_8.png Graphic file (type bmp)
+<images/lists_8.png>
+File: images/lists_9.png Graphic file (type bmp)
+<images/lists_9.png>
+File: images/lists_10.png Graphic file (type bmp)
+<images/lists_10.png>
+File: images/lists_11.png Graphic file (type bmp)
+<images/lists_11.png>
+File: images/lists_12.png Graphic file (type bmp)
+<images/lists_12.png>
+ [13]
 File: images/teigi_1.png Graphic file (type bmp)
 <images/teigi_1.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 725--730
-[][]\OT1/cmr/m/n/10 (\JY1/mc/m/n/10 見
- []
-
-
-Underfull \hbox (badness 10000) detected at line 732
-[]$[]$[]
- []
-
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 738.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 738.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 738.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 738.
-[14] (./bushi.aux)
+File: images/teigi_2.png Graphic file (type bmp)
+<images/teigi_2.png>
+File: images/teigi_5.png Graphic file (type bmp)
+<images/teigi_5.png>
+File: images/teigi_6.png Graphic file (type bmp)
+<images/teigi_6.png>
+ [14] (./bushi.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-06-01> patch level 1
@@ -677,12 +731,12 @@ L3 programming layer <2023-08-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5332 strings out of 475846
- 81742 string characters out of 5782113
+ 5288 strings out of 475846
+ 85452 string characters out of 5782113
  1939084 words of memory out of 5000000
- 26477 multiletter control sequences out of 15000+600000
- 579052 words of font info for 131 fonts, out of 8000000 for 9000
+ 26398 multiletter control sequences out of 15000+600000
+ 577926 words of font info for 125 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 57i,6n,65p,809b,1296s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,809b,392s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bushi.dvi (14 pages, 100812 bytes).
+Output written on bushi.dvi (14 pages, 103488 bytes).
