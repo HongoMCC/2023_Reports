@@ -521,78 +521,80 @@ Scratchでは結構使う。プレイヤーのアカウント名を取得でき�
 \subsection{演算}
 このカテゴリのブロックはずべ手演算関係です。基本全部よく使う。
 \begin{itembox}{1}
-((n1)+(n2))
+\includegraphics[height=8mm]{images/operators_1.png}
 
-((n1)-(n2))
+\includegraphics[height=8mm]{images/operators_2.png}
 
-((n1)*(n2))
+\includegraphics[height=8mm]{images/operators_3.png}
 
-((n1)/(n2))
+\includegraphics[height=8mm]{images/operators_4.png}
 \end{itembox}
 使用頻度 ほぼ必須◎◎\\
 逆に◎じゃない人の理由を知りたい。四則演算なしで数字をどう処理するん?
 \begin{itembox}{2}
-((n1)から(n2)までの乱数)
+\includegraphics[height=8mm]{images/operators_5.png}
 \end{itembox}
 使用頻度◎\\
 最も基本的な乱数生成器。シードに時間を使っているので、異なるスプライト間でも同時に乱数を取得すれば同じ結果になる。そこだけ注意。
 \begin{itembox}{3}
-＜(n1)＞(n2)＞
+\includegraphics[height=8mm]{images/operators_6.png}
 
-＜(n1)＜(n2)＞
+\includegraphics[height=8mm]{images/operators_7.png}
 \end{itembox}
 使用頻度◎\\
 これは四則演算に入ります。2個ありますが、私は見た目的にどうしても変数を左において定数を右に置きたいのでどちらも使っています。
 \begin{itembox}{4}
-＜(n1 or text)=(n2 or text)＞
+\includegraphics[height=8mm]{images/operators_8.png}
 \end{itembox}
 使用頻度 ほぼ必須◎◎\\
 ほかの言語でいう「==」ですね。数字同士でも文字同士でも使えるので何も考えずに使えて便利。ただ、aとAを区別できないのが残念。そういう時はコスチュームの名前を使って判別しましょう。
 \begin{itembox}{5}
-＜＜true?＞かつ＜true?＞＞
+\includegraphics[height=8mm]{images/operators_9.png}
 
-＜＜true?＞または＜true?＞＞
+\includegraphics[height=8mm]{images/operators_10.png}
 
-＜＜true?＞ではない＞
+\includegraphics[height=8mm]{images/operators_11.png}
 \end{itembox}
 使用頻度ほぼ必須◎◎\\
 いわゆる論理ゲートです。それぞれand、or、notに当たります。xorはこれらを使って作れるので問題なし。
 \begin{itembox}{6}
-((text)と(text))
+\includegraphics[height=8mm]{images/operators_12.png}
 \end{itembox}
 使用頻度◎\\
 文字列編集に特化したブロックです。scratchでは変数や特にリストと一緒に使われます。詳しくはリストで解説します。
 \begin{itembox}{7}
-((text)の(n)番目の文字)
+\includegraphics[height=8mm]{images/operators_13.png}
 \end{itembox}
 使用頻度◎\\
 同じく、文字列編集に特化しています。というか、このブロック(とさっきのやつ)がないと文字列の部分的な置き換え・挿入もままなりません。
 \begin{itembox}{8}
-((text)の長さ)
+\includegraphics[height=8mm]{images/operators_14.png}
 \end{itembox}
 使用頻度◎\\
 上記の2ブロックと一緒に使うと幸せになります。
 \begin{itembox}{9}
-＜(text1)に(text2)が含まれる＞
+\includegraphics[height=8mm]{images/operators_15.png}
 \end{itembox}
 使用頻度○\\
 リストカテゴリにこれのほぼ上位互換があるのであまり使われません。でも使いやすい。
 \begin{itembox}{10}
-((n1)を(n2)で割った余り)
+\includegraphics[height=8mm]{images/operators_16.png}
 \end{itembox}
 使用頻度△\\
 余りなんか求めてどうするん?乱数生成など一部のプログラムでは使えなくもないが、ほとんど2個次のブロックに出番を取られている。
 \begin{itembox}{11}
-((n1)を四捨五入)
+\includegraphics[height=8mm]{images/operators_17.png}
 \end{itembox}
 使用頻度△\\
 極限値など処理が長引く際に短縮するために使うこともあるが基本そんなに出番はない。ちなみに数学的に正しいけれど紛らわしい例として、-1.5は四捨五入したら-1になります。
 \begin{itembox}{12}
-((n)の[絶対値▽])
+\includegraphics[height=8mm]{images/operators_18.png}
 \end{itembox}
 使用頻度◎\\
 四則演算と論理ゲートの次によく使うブロックです。ドロメニュから絶対値、切り上げ＆下げ、平方根、三角関数一式、ln、10＾、log、e＾が選択できます。これはもう使わない理由がないですね。ちなみに切り上げ＆下げは四捨五入同様少し紛らわしいところがあるので要注意。三角関数は3Dプロジェクトを作るうえpenと一緒に欠かせません。ちなみに、x＾yを計算したいときは( ( ((x)の[ln▽]) * (y) )の[10＾▽])で計算できます。\sout{紛らわしかったら自分で\\模索してみてください。}
+
 \subsection{変数}
+
 まあまあ多くの人がつまずくところ、変数です。中級者レベルになるとさすがに使いこなせると思うのですが一応解説します。
 
 変数とはいったい何なのでしょうか。まずは名前から推測してみましょう。変わる数...さっぱり、という方が多いのではないのでしょうか。(まあ実際バンバン値変わりますね。)何も知らない人に推測してもらったところ、「方程式のxとかそういう感じ?」という回答が返ってきました。まあながち間違いではないですね。
@@ -610,24 +612,24 @@ Scratchでは結構使う。プレイヤーのアカウント名を取得でき�
 
 変数の概念がわかったところで、変数の目的に戻ります。(また紙切れの例です)おそらくですがあなたが紙切れに文字を記した目的は、忘れないようにするためか、それかほかの人に伝えるかでしょう。そう、「わすれないように」と「つたえるために」。それこそが(私的には)変数の目的です。プログラムのが出した値(データ)なんてもう一度実行すれば上書きされますよね。しかし出したデータを変数に書き込むことで、プログラムはデータを「覚える」ことができるのです。さらにその変数をほかのプログラムに「渡す」こともできちゃうのです。これが私が把握できている変数の目的です。
 \begin{itembox}{1}
-[variable▽]を(n)にする
+\includegraphics[height=8mm]{images/variables_1.png}
 \end{itembox}
 使用頻度 ほぼ必須◎◎\\
 変数の値を設定する。変数について解説するべきものは冒頭でしちゃったから言うことがほとんどない。
 \begin{itembox}{2}
-[variable▽]を(n)ずつ変える
+\includegraphics[height=8mm]{images/variables_2.png}
 \end{itembox}
 使用頻度 ほぼ必須◎◎\\
 変数の値をnだけ変更する。[variable▽]のところを選択じゃなくて代入可能の(variable▽)にしてほしかったけど最近TurboWarpにそんな拡張機能が追加されたので満足しています。
 \begin{itembox}{3}
-変数[variable▽]を表示する
+\includegraphics[height=8mm]{images/variables_3.png}
 
-変数[variable▽]を隠す
+\includegraphics[height=8mm]{images/variables_4.png}
 \end{itembox}
 使用頻度×\\
 変数モニターをステージ上に出す。デフォルトはオレンジ色で確かどうこうするとアクセントカラーが変わると聞いたことはあるもののどっちにしろデザインは変えられずダサいので却下。なお、変数モニター自体はデバッグで便利なので有用。
 \begin{itembox}{4}
-(variable)
+\includegraphics[height=8mm]{images/variables_5.png}
 \end{itembox}
 使用頻度 ほぼ必須◎◎\\
 veriableは英語で変数で、仮の名前。つけようと思えばほぼどんな名前も付けられる。上2個のブロックで代入されたデータを返す。ちなみに、ほかの多くの言語ではstring形式(文字)、int形式(整数)、float形式(実数)の変数がそれぞれあって、違う型のデータは入れられない。しかしScratchはなぜか変数のタイプが一つしかなく、どんな型のデータも入れられる。前までは何も考えずにデータをぶち込めると喜んでいたが、最近初心者にとっては余計デバッグが大変になる要因の一つのではないかと心配している。ちなみに自分はそれで躓いたことはなかった。
@@ -657,60 +659,61 @@ Scratchではクラウド変数というものがある。単刀直入に言お�
 そうすると、リストの内容は[「010」,「110」,「001」]となります。このとき、保存したマップの2行目の3番目の文字を読み取りたいときは、リストの2番目の3文字目を読み取るだけです。なぜならここではリストの要素は行と、要素のデータがそれぞれの行のデータと対応しているからです。少し難しいですが優れている仕組みであるとわかっていただければokです。
 
 では、要素は要素(つまり変数)の集合体なので、リストとそれが含む要素をつかえば変数は要らないのでしょうか。答えは△です。リストの要素は変数として問題なく使えるので、やろうと思えば全然代替できます。しかし、要素をつかうには毎回リストの何番目かを指定しなければならないので、変数に比べて使うのに比べてひと手間かかります。そのため、カウンターといったセットではないデータを管理する際は変数が手軽です。また、リストは変数と組み合わせることでより一層力を発揮することができます。スマホ(変数、使いやすい)とパソコン(リスト、万能)みたいな関係ですね。後どうでもいいですが、長く使っていると要素などというめんどくさい概念は忘れて、代わりにデータがならんいるという風に解釈するようになるのですが、もしかしたらこちらの方が理解しやすい人もいると思うので一応書いておきました。ではブロック紹介をどうぞ。
+
 \begin{itembox}{1}
-(data)を[list▽]に追加する
+\includegraphics[height=8mm]{images/lists_1.png}
 \end{itembox}
 使用頻度◎\\
 リストの最後尾に要素を追加します。要素になにもデータを持たせたくないときは空欄のままで構いません。
 \begin{itembox}{2}
-[list▽]の(n)番目を削除する
+\includegraphics[height=8mm]{images/lists_2.png}
 \end{itembox}
 使用頻度◎\\
 n番目の要素をデータごと消します。以降のブロックもそうですが、ここのnには「all」だったり「random」だったり一部の文字を入れても機能します。なお、そこに直接文字を打ち込むことはできないため、コピペする形になります。
 \begin{itembox}{3}
-[list▽]のすべてを削除する
+\includegraphics[height=8mm]{images/lists_3.png}
 \end{itembox}
 使用頻度◎\\
 基本初期化でしか使えませんがデータを読み取る際は頻繁に初期化するのでokです。
 \begin{itembox}{4}
-[list▽]の(n)番目に(data)を挿入する
+\includegraphics[width=39mm]{images/lists_4.png}
 \end{itembox}
 使用頻度◎\\
 文字通り挿入します。挿入したデータがn番目となり、もともとn番目以降のデータは1つ下に下がります。
 \begin{itembox}{5}
-[list▽]の(n)番目を(data)で置き換える
+\includegraphics[width=39mm]{images/lists_5.png}
 \end{itembox}
 使用頻度◎\\
 こちらも文字通り置き換えるだけ。置き換え元が存在していない場合(たとえばリストに3つしか要素がないのに4番目を置き換えようとした)は何も起きないので先にほかのブロックで追加しておこう。
 \begin{itembox}{6}
-([list▽]の(n)番目)
+\includegraphics[height=8mm]{images/lists_6.png}
 \end{itembox}
 使用頻度◎\\
 要素のデータを出力する。いちいちリストの何番目か明示しないといけないため、変数として使うのはあまりよろしくない。ちなみに、リストの仕様上要素は削除できるので、これを使えばスクリプトだけで削除も追加もできちゃう模擬変数が作れます。確かこれをリスト変数とかといったはずです。
 \begin{itembox}{7}
-([list▽]中の(data)の場所)
+\includegraphics[height=8mm]{images/lists_7.png}
 \end{itembox}
 使用頻度◎\\
 文字通り。ここで注意したいのが、リストの中に目当てのデータが2つ以上含まれていても、1つ目の場所しか出力しません。え？ちょうどこの仕様で困っているって？TurboWarpを使いましょう(自分でもうるさく感じてきました)。
 \begin{itembox}{8}
-([list▽]の長さ)
+\includegraphics[height=8mm]{images/lists_8.png}
 \end{itembox}
 使用頻度◎\\
 リストが含む要素の数を返す。「(n)回繰り返す｛｝」と相性がいい。当然だが要素が何のデータも持っていなくてもカウントする。
 \begin{itembox}{9}
-＜[list▽]に(data)が含まれる＞
+\includegraphics[width=39mm]{images/lists_9.png}
 \end{itembox}
 使用頻度○\\
 「そうか含まれるのか。だからどうした。」的なブロック。使えなくもないがわざわざ使う理由がそんなにない。たまに本領を発揮して無双(?)する。
 \begin{itembox}{10}
-リスト[list▽]を表示する
+\includegraphics[height=8mm]{images/lists_10.png}
 
-リスト[list▽]を隠す
+\includegraphics[height=8mm]{images/lists_11.png}
 \end{itembox}
 使用頻度△\\
 変数のアレのリスト版。デバッグではリストもモニターを使う。変数のアレと同じ運命をたどるとおもいきや、Scratchにおいて唯一リストのモニターはコピペできる文字列をスクリーン上に表示できるので使いどころはまだある(セーブコードとか)。しかしきみはTurboWarpの(以下略)
 \begin{itembox}{11}
-(list)
+\includegraphics[height=8mm]{images/lists_12.png}
 \end{itembox}
 使用頻度△\\
 リストの要素を全部ぶわぁああと返す。要素同士をスペースでくっつけて一つにしてくるので少し扱いづらい。なぜなら要素のデータに含まれるスペースと区別がつかないから。(リストの(n)番目)とかで読み取った方が早くて便利。
@@ -721,23 +724,26 @@ n番目の要素をデータごと消します。以降のブロックもそう�
 
 それでは解説をどうぞ。
 \begin{itembox}{使用例1}
-\includegraphics[width=4cm]{images/teigi_2.png}
+\includegraphics[width=39mm]{images/teigi_1.png}
+
+\includegraphics[width=39mm]{images/teigi_2.png}
 \end{itembox}
 ブロック定義は、何個かのブロックをつなげてそれを一個のブロックにまとめるという機能です。
-名前は自由に設定できるので分かりやすい名前に設定しておきましょう。別にふざけた名前を付けてもいいですヨ。この場合では、\\\\
-\includegraphics[width=4cm]{images/teigi_1.png}(見切れてるのはお許しください)
-のように変なイベントブロックみたいなやつにブロックをくっつけています。そして、欄中のブロックを実行することで、くっつけたブロックがすべて実行されます。何個かオプションはありますが、基本はたったのこれだけです。ね？簡単でしょ？
-\begin{itembox}{使用例2}
+名前は自由に設定できるので分かりやすい名前に設定しておきましょう。別にふざけた名前を付けてもいいですヨ。この場合では、下の方のブロックのように変なイベントブロックみたいなやつにブロックをくっつけています。そして、欄中のブロックを実行することで、くっつけたブロックがすべて実行されます。何個かオプションはありますが、基本はたったのこれだけです。ね？簡単でしょ？
 
-\end{itembox}
+何とブロック定義はこのように引数を設けることもできるのです！毎回異なる値を入力するけど処理が同じ、という際は引数を使っていてください
 
 定義ブロックは、何個かのブロックを圧縮したものとなります。基本的な使い方としては、何回も使うような同じブロックの集合体を定義ブロックとして圧縮して見た目をよくして総ブロック数を抑えます。引数も設定できるので、
+\begin{itembox}{使用例2}
+\includegraphics[width=39mm]{images/teigi_5.png}
 
+\includegraphics[width=39mm]{images/teigi_6.png}
+\end{itembox}
+これはTurboWarpの拡張機能でCustomReporterというものですが、見ての通り引数型の定義ブロックの作成を可能にします。今までの定義ブロックの欠点を補えるのはいいですね。
 
-% ソースコードを挿入するときは以下のようにしてくださいS
-\begin{lstlisting}[caption=Sample]
-mes "hello, world!"
-\end{lstlisting}
+\section{おわりに}
+
+さて、ここまでScratchのほぼすべてのブロックを解説してきました。まだまだペンや音楽といったScratchにも存在する拡張機能、ハックブロックなどに触れていませんが疲れたので許してください。この記事が皆さんのためになったり、くすっと笑っていただければ嬉しいです。自分で触ってみることに越したことはないので、ぜひご自分でScratch(TurboWarp)で試してみてください。ではまた来年(部誌がでるなら)!
 
 \end{multicols*}
 \end{document}
